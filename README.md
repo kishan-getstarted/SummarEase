@@ -1,50 +1,16 @@
-# React + TypeScript + Vite
+## Installing and Running
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Procedures:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Check if your [Node.js](https://nodejs.org/) version is >= **18**.
+2. Clone this repository.
+3. Change the package's `name`, `description`, and `repository` fields in `package.json`.
+4. Change the name of your extension on `public/manifest.json`.
+5. Run `npm install` to install the dependencies.
+6. Run `npm run build`
+7. Load your extension on Chrome following:
+   1. Access `chrome://extensions/`
+   2. Check `Developer mode`
+   3. Click on `Load unpacked extension`
+   4. Select the `build` folder.
+8. Happy hacking
