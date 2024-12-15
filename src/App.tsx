@@ -3,7 +3,9 @@ import './App.css'
 import { extractPageContent } from './content';
 import OpenAI from 'openai';
 const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
-
+/**
+ * This is just for demonstration purposes. Use nodejs backend for production.
+ */
 const client = new OpenAI({
   apiKey: apiKey  , // This is the default and can be omitted
   dangerouslyAllowBrowser: true,

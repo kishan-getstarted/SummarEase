@@ -1,3 +1,7 @@
+/**
+ * Extracts the main content of the current page
+ * @returns string
+ */
 export function extractPageContent(): string {
     const unwantedSelectors = [
       'script', 'style', 'noscript', 'iframe', 'nav', 'footer',
