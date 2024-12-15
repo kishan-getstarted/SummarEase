@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SummarEase",
+  "version": "1.0.0",
+  "description": "Easy and quick summaries.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "host_permissions": [
+    "<all_urls>" 
+  ],
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab"
+  ]
+}
