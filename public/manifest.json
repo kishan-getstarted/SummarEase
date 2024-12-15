@@ -7,7 +7,7 @@
     "default_popup": "index.html"
   },
   "host_permissions": [
-    "<all_urls>" 
+    "*://*/*" 
   ],
   "permissions": [
     "tabs",
